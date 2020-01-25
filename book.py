@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mlxtend.frequent_patterns import apriori,association_rules
 
-book=pd.read_csv("G:\\Assignments\\Association Rules\\Assignments\\book.csv")
+book=pd.read_csv("G:\\Association Rules\\book.csv")
 
 frequent_itemsets = apriori(book,min_support=0.005, max_len=3,use_colnames = True)
 frequent_itemsets.shape
